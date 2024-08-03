@@ -1,0 +1,87 @@
+.a{
+    display: flex;
+    height: 100px;
+    width: auto;
+    border: 2px solid black;
+    justify-content: center;
+    text-align: center; 
+    align-items: center;
+    /* background-image: url(weather.jpg); */
+    background-color: black;
+    background-size: 100% 100%;
+}
+.b{
+    display: flex;
+    height:625px;
+    width: auto;
+    border: 2px solid transparent;
+    justify-content: center;
+    text-align: center; 
+    align-items: center;
+    margin-top: 33px;
+    position: relative;
+    overflow: hidden;
+}
+.v{
+    z-index: -1;
+ position: absolute;
+ top: 0;
+ left: 0;
+ min-width:100%;
+ min-height: 100%;
+}
+.c{
+    z-index: 1;
+    height: 330px;
+    width: 280px;
+    border: 3px solid rgb(0, 0, 0);
+    padding-top: 20px;  
+    color: rgb(0, 0, 0);  
+}
+.s{
+    display: block;
+    font-size: 27.5px;
+    margin-left: 880px;
+    margin-top: -66px;
+    font-weight: bold;
+}
+.h21{
+    color: white;
+}
+.s::before{
+ content: "HUMIDITY";
+ color:cyan;
+ animation: words 10s infinite;
+}
+@keyframes words {
+        0%,20%{
+            content: "TEMPERATURE";
+            color: burlywood;
+        }
+        21%,40%{
+            content: "HUMIDITY";
+            color:rgb(162, 157, 157);
+        }
+        41%,60%{
+            content: "PRESSURE";
+            color: rgb(212, 123, 212);
+        }
+        61%,80%{
+            content: "WINDS";
+            color: rgb(170, 40, 105);
+        }
+        81%,100%{
+            content: "Ozone Level";
+        }
+}
+h3,h5{
+    font-size: 19px;
+    background-color: rgb(211, 202, 202);
+}
+#city{
+    background-color: rgb(177, 173, 173);
+    color: white;
+}
+button{
+    background-color: rgb(177, 173, 173);
+}
